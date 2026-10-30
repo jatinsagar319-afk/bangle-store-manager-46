@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Bangle Store Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h2>✦ BANGLE STORE</h2>
+    <p>Business Management System</p>
+  </header>
+
+  <main class="container">
+    <h1>Dashboard</h1>
+    <p class="subtitle">Welcome to your store</p>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span>Total Products</span>
+        <h2 id="totalProducts">0</h2>
+      </div>
+
+      <div class="stat-card">
+        <span>Total Sales</span>
+        <h2 id="totalSales">₹0</h2>
+      </div>
+
+      <div class="stat-card">
+        <span>Low Stock</span>
+        <h2 id="lowStock">0</h2>
+      </div>
+    </section>
+
+    <h2 class="section-title">Business Modules</h2>
+
+    <section class="modules">
+      <button onclick="showMessage('Inventory')">📦 Inventory</button>
+      <button onclick="showMessage('AI Set Maker')">💎 AI Set Maker</button>
+      <button onclick="showMessage('New Sale')">🧾 New Sale</button>
+      <button onclick="showMessage('Bills')">📄 Bills</button>
+      <button onclick="showMessage('Reports')">📊 Reports</button>
+      <button onclick="showMessage('Daily Parcha')">🎙️ Daily Parcha</button>
+    </section>
+
+    <p id="message">Your business starts here.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
